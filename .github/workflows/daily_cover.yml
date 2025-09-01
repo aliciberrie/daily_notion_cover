@@ -2,8 +2,8 @@ name: Daily Notion Cover Update
 
 on:
   schedule:
-    # Runs at 8 AM PT (15:00 UTC)
-    - cron: '0 15 * * *'
+    # Runs at 12 AM PT (7:00 UTC)
+    - cron: '0 7 * * *'
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
