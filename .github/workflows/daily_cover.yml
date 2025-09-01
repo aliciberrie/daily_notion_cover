@@ -1,0 +1,28 @@
+name: Daily Notion Cover Update
+
+on:
+  schedule:
+    # Runs at 8 AM PT (15:00 UTC)
+    - cron: '0 15 * * *'
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update_cover:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Notion cover updater
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python update_cover.py
