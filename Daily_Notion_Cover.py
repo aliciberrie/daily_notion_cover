@@ -7,8 +7,8 @@ PAGE_ID = "26152b919b808080982efe21d3d7a1a4"
 
 headers = {
     "Authorization": f"Bearer {NOTION_TOKEN}",
-    "Notion-Version": "2022-06-28",
-    "Content-Type": "application/json" # what is this?
+    "Notion-Version": "2025-09-01",
+    "Content-Type": "application/json" 
 }
 
 # Step 1: Query database for image URLs
