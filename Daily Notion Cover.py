@@ -1,7 +1,7 @@
 import requests, random, os
 
 # Notion credentials ... os.getenv()
-NOTION_TOKEN = "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"  # Or paste token directly (not recommended)
+NOTION_TOKEN = os.getenv("NOTION_TOKEN")  # Or paste token directly (not recommended)
 DATABASE_ID = "26152b919b8080a2b262dc9817020768" 
 PAGE_ID = "26152b919b808080982efe21d3d7a1a4"
 
