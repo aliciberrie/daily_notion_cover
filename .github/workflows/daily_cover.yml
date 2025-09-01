@@ -25,4 +25,4 @@ jobs:
       - name: Run Notion cover updater
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: python update_cover.py
+        run: python Daily_Notion_Cover.py
