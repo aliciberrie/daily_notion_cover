@@ -1,13 +1,13 @@
 import requests, random, os
 
-# Notion credentials ... os.getenv()
+# Notion credentials 
 NOTION_TOKEN = os.getenv("NOTION_TOKEN")  # Or paste token directly (not recommended)
 DATABASE_ID = "26152b919b8080a2b262dc9817020768" 
 PAGE_ID = "26152b919b808080982efe21d3d7a1a4"
 
 headers = {
     "Authorization": f"Bearer {NOTION_TOKEN}",
-    "Notion-Version": "2025-09-01",
+    "Notion-Version": "2022-06-28",
     "Content-Type": "application/json" 
 }
 
