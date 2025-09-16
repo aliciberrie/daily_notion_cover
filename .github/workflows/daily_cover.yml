@@ -1,5 +1,3 @@
-"""
-
 name: Daily Notion Cover Update
 
 on:
@@ -28,5 +26,3 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: python Daily_Notion_Cover.py
-
-"""
